@@ -1,716 +1,1473 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Suakshitha - Nursery</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>
+      Suakshitha Nursery - Best Landscaping & Garden Services in Srivilliputhur,
+      Tamil Nadu
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <meta
+      content="Discover Suakshitha Nursery, Srivilliputhur's top choice for landscaping, garden maintenance, nursery development, and agricultural support services. We are a dedicated Tamil Nadu company. Get your free quote today!"
+      name="description"
+    />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+    <meta
+      content="Suakshitha Nursery, nursery in Srivilliputhur, landscaping Srivilliputhur, garden services Tamil Nadu, plants Srivilliputhur, urban gardening, agricultural services, nursery development, farm support services"
+      name="keywords"
+    />
+    <meta content="Suakshitha Nursery" name="author" />
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="img/logo/3.png" rel="icon" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Suakshitha Nursery",
+        "image": "img/logo.png",
+        "url": "https://www.suakshithanursery.com",
+        "telephone": "+91 91234 56789",
+        "email": "info@suakshithanursery.com",
+        "description": "Srivilliputhur's top choice for landscaping, garden maintenance, nursery development, and agricultural support services.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Garden Road, Near Andal Temple",
+          "addressLocality": "Srivilliputhur",
+          "addressRegion": "Tamil Nadu",
+          "postalCode": "626125",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 9.5106,
+          "longitude": 77.6015
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/suakshithanursery",
+          "https://www.instagram.com/suakshithanursery"
+        ]
+      }
+    </script>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Topbar Start -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .service-category {
+        margin-bottom: 50px;
+      }
+      .service-category h3 {
+        color: #198754;
+        border-bottom: 2px solid #198754;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+      }
+      .service-list-item {
+        background: #f8f9fa;
+        border-left: 4px solid #198754;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      .service-list-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .service-provider-tag {
+        display: inline-block;
+        background: #198754;
+        color: white;
+        padding: 3px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        margin-top: 10px;
+        font-weight: 500;
+      }
+      .portfolio-item {
+        margin-bottom: 30px;
+      }
+      .team-item {
+        transition: all 0.3s ease;
+      }
+      .team-item:hover {
+        transform: translateY(-10px);
+      }
+      .testimonial-item {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+      .back-to-top {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        z-index: 99;
+      }
+      @media (max-width: 768px) {
+        .display-1 {
+          font-size: 3rem;
+        }
+        .display-5 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="container-fluid bg-dark text-light px-0 py-2">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <span class="fa fa-phone-alt me-2"></span>
-                    <span>+012 345 6789</span>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <span class="far fa-envelope me-2"></span>
-                    <span>info@example.com</span>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <span class="fa fa-phone-alt me-2"></span>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <span class="far fa-envelope me-2"></span>
+            <span>contact@suakshithanursery.com</span>
+          </div>
         </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center mx-n2">
+            <span>Follow Us:</span>
+            <a
+              class="btn btn-link text-light"
+              href="https://facebook.com/suakshithanursery"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-link text-light"
+              href="https://instagram.com/suakshithanursery"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-link text-light"
+              href="https://youtube.com/suakshithanursery"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">Suakshitha</h1>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm"
+    >
+      <div class="container-fluid px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img
+            src="img/logo/2.png"
+            alt="Suakshitha Nursery Srivilliputhur Logo"
+            style="height: 70px; width: auto"
+          />
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          type="button"
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="project.html" class="nav-item nav-link">Projects</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+          <div class="navbar-nav ms-auto align-items-center py-3 py-lg-0">
+            <a href="#home" class="nav-item nav-link active px-3">Home</a>
+            <a href="#about" class="nav-item nav-link px-3">About</a>
+            <a href="#services" class="nav-item nav-link px-3">Services</a>
+            <a href="#projects" class="nav-item nav-link px-3">Projects</a>
+            <a href="#team" class="nav-item nav-link px-3">Our Team</a>
+            <a href="#contact" class="nav-item nav-link px-3">Contact</a>
+            <a
+              href="#quote"
+              class="nav-item nav-link d-lg-none py-2 px-3 mt-2 mt-lg-0"
+              >Get Quote</a
+            >
+          </div>
+          <a
+            href="#quote"
+            class="btn btn-primary py-2 px-4 rounded-0 d-none d-lg-inline-flex align-items-center ms-3"
+          >
+            Get Quote <i class="fa fa-arrow-right ms-2"></i>
+          </a>
         </div>
+      </div>
     </nav>
-    <!-- Navbar End -->
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Make Your Home Like Garden</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div id="home" class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="w-100"
+              src="img/carousel-1.jpg"
+              alt="Beautiful landscaped garden - Suakshitha Nursery Srivilliputhur"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <h1 class="display-1 text-white mb-5 animated slideInDown">
+                      Complete Garden & Nursery Solutions
+                    </h1>
+                    <a href="#services" class="btn btn-primary py-sm-3 px-sm-4"
+                      >Explore Services</a
+                    >
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Create Your Own Small Garden At Home</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100"
+              src="img/carousel-2.jpg"
+              alt="Nursery development and agricultural support services"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7">
+                    <h1 class="display-1 text-white mb-5 animated slideInDown">
+                      Professional Nursery Development & Agricultural Support
+                    </h1>
+                    <a
+                      href="#nursery-services"
+                      class="btn btn-primary py-sm-3 px-sm-4"
+                      >Learn More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    <!-- Carousel End -->
 
-
-    <!-- Top Feature Start -->
     <div class="container-fluid top-feature py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-times text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>No Hidden Cost</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container py-5 pt-lg-0">
+        <div class="row gx-0">
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+            <div
+              class="bg-white shadow d-flex align-items-center h-100 px-5"
+              style="min-height: 160px"
+            >
+              <div class="d-flex">
+                <div
+                  class="flex-shrink-0 btn-lg-square rounded-circle bg-light"
+                >
+                  <i class="fa fa-times text-primary"></i>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-users text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Dedicated Team</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="ps-3">
+                  <h4>No Hidden Cost</h4>
+                  <span
+                    >Transparent pricing for all our services in
+                    Srivilliputhur.</span
+                  >
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>24/7 Available</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Top Feature End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-end">
-                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg">
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+            <div
+              class="bg-white shadow d-flex align-items-center h-100 px-5"
+              style="min-height: 160px"
+            >
+              <div class="d-flex">
+                <div
+                  class="flex-shrink-0 btn-lg-square rounded-circle bg-light"
+                >
+                  <i class="fa fa-users text-primary"></i>
                 </div>
-                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h1 class="display-1 text-primary mb-0">25</h1>
-                    <p class="text-primary mb-4">Year of Experience</p>
-                    <h1 class="display-5 mb-4">We Make Your Home Like A Garden</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                <div class="ps-3">
+                  <h4>Expert Team</h4>
+                  <span>Certified professionals with years of experience.</span>
                 </div>
-                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-5">
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Award Winning</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-12">
-                            <div class="border-start ps-4">
-                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Dedicated Team</h4>
-                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+            <div
+              class="bg-white shadow d-flex align-items-center h-100 px-5"
+              style="min-height: 160px"
+            >
+              <div class="d-flex">
+                <div
+                  class="flex-shrink-0 btn-lg-square rounded-circle bg-light"
+                >
+                  <i class="fa fa-award text-primary"></i>
+                </div>
+                <div class="ps-3">
+                  <h4>Quality Guaranteed</h4>
+                  <span>Premium materials and proven techniques.</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- About End -->
 
-
-    <!-- Facts Start -->
-    <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-        <div class="container py-5">
+    <div id="about" class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5 align-items-end">
+          <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+            <img
+              class="img-fluid rounded"
+              data-wow-delay="0.1s"
+              src="img/about.jpg"
+              alt="About Suakshitha Nursery - Our Srivilliputhur Team"
+            />
+          </div>
+          <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+            <h1 class="display-1 text-primary mb-0">25</h1>
+            <p class="text-primary mb-4">Years of Excellence</p>
+            <h1 class="display-5 mb-4">
+              Your Complete Garden & Nursery Partner
+            </h1>
+            <p class="mb-4">
+              Based in Srivilliputhur, Tamil Nadu, we are your one-stop solution
+              for all gardening, nursery development, and agricultural support
+              needs. With 25 years of experience, we combine traditional
+              knowledge with modern technology to deliver exceptional results.
+            </p>
+            <a class="btn btn-primary py-3 px-4" href="#services"
+              >Our Services</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
             <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Happy Clients</span>
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="border-start ps-4">
+                  <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3">Certified Experts</h4>
+                  <span
+                    >NHM/NHB certified professionals with multiple awards</span
+                  >
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Garden Complated</span>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-12">
+                <div class="border-start ps-4">
+                  <i class="fa fa-seedling fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3">Sustainable Practices</h4>
+                  <span>Eco-friendly methods and organic solutions</span>
                 </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Dedicated Staff</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="fs-5 fw-semi-bold text-light">Awards Achieved</span>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Facts End -->
 
-
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
-                    <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                            <i class="fa fa-check fa-3x text-primary"></i>
-                                        </div>
-                                        <h4 class="mb-0">100% Satisfaction</h4>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                        <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                            <i class="fa fa-users fa-3x text-primary"></i>
-                                        </div>
-                                        <h4 class="mb-0">Dedicated Team</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="text-center rounded py-5 px-4" style="box-shadow: 0 0 45px rgba(0,0,0,.08);">
-                                <div class="btn-square bg-light rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                                    <i class="fa fa-tools fa-3x text-primary"></i>
-                                </div>
-                                <h4 class="mb-0">Modern Equipment</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="services" class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <p class="fs-5 fw-bold text-primary">Our Services</p>
+          <h1 class="display-5 mb-5">Garden Development Services</h1>
         </div>
-    </div>
-    <!-- Features End -->
 
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Services</p>
-                <h1 class="display-5 mb-5">Services That We Offer For You</h1>
+        <div class="service-category">
+          <h3>Design & Planning</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Custom Landscape Design</h5>
+                <p>
+                  Tailored designs matching your style preferences -
+                  Traditional, Modern, Tropical, or Zen gardens
+                </p>
+                <span class="service-provider-tag">Landscape Designers</span>
+              </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-3.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Landscaping</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-6.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Pruning plants</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-5.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Irrigation & Drainage</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-4.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Garden Maintenance </h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-8.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Green Technology</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded d-flex h-100">
-                        <div class="service-img rounded">
-                            <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        </div>
-                        <div class="service-text rounded p-5">
-                            <div class="btn-square rounded-circle mx-auto mb-3">
-                                <img class="img-fluid" src="img/icon/icon-2.png" alt="Icon">
-                            </div>
-                            <h4 class="mb-3">Urban Gardening</h4>
-                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Lighting Design</h5>
+                <p>
+                  Strategic outdoor lighting to highlight features and ensure
+                  safety
+                </p>
+                <span class="service-provider-tag">Lighting Specialists</span>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Rock & Fountain Features</h5>
+                <p>
+                  Installation of decorative rock gardens, water fountains, and
+                  waterfall features
+                </p>
+                <span class="service-provider-tag">Feature Specialists</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Service End -->
 
-
-    <!-- Quote Start -->
-    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="service-category">
+          <h3>Planting Services</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Ornamental Plants Selection</h5>
+                <p>
+                  Wide variety of flowering plants, shrubs, and decorative
+                  foliage
+                </p>
+                <span class="service-provider-tag">Plant Specialists</span>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Fruit Trees Supply</h5>
+                <p>
+                  Quality fruit trees suitable for Tamil Nadu climate - Mango,
+                  Guava, Pomegranate, etc.
+                </p>
+                <span class="service-provider-tag">Nursery Suppliers</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Medicinal Herbs Garden</h5>
+                <p>
+                  Create your own medicinal garden with Tulsi, Aloe Vera,
+                  Brahmi, etc.
+                </p>
+                <span class="service-provider-tag">Herbal Specialists</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Quote End -->
 
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+        <div class="service-category">
+          <h3>Maintenance Services</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Lawn Care</h5>
+                <p>Regular mowing, edging, fertilizing, and weed control</p>
+                <span class="service-provider-tag">Maintenance Teams</span>
+              </div>
             </div>
-            <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Plant Care</h5>
+                <p>
+                  Pruning, trimming, pest control, and nutritional management
+                </p>
+                <span class="service-provider-tag">Garden Experts</span>
+              </div>
             </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Landscaping</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Pruning plants</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Irrigation & Drainage</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-4.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Garden Maintenance</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Green Technology</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="portfolio-inner rounded">
-                        <img class="img-fluid" src="img/service-6.jpg" alt="">
-                        <div class="portfolio-text">
-                            <h4 class="text-white mb-4">Urban Gardening</h4>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square rounded-circle mx-2" href="img/service-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square rounded-circle mx-2" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Irrigation Management</h5>
+                <p>
+                  Drip irrigation setup, timer systems, and water management
+                </p>
+                <span class="service-provider-tag">Irrigation Experts</span>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Projects End -->
 
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-bold text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+        <div class="service-category">
+          <h3>Specialty Gardens</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Vertical Gardening</h5>
+                <p>Space-saving vertical gardens for walls and small spaces</p>
+                <span class="service-provider-tag"
+                  >Vertical Garden Specialists</span
+                >
+              </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
-                            <p class="text-primary">Landscape Designer</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Johnny Ramirez</h4>
-                            <p class="text-primary">Garden Designer</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
-                            <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Organic Gardens</h5>
+                <p>Chemical-free vegetable and herb gardens</p>
+                <span class="service-provider-tag"
+                  >Organic Farming Experts</span
+                >
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Rock Gardens</h5>
+                <p>Low-maintenance rock gardens with succulents</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Water Features</h5>
+                <p>Ponds, waterfalls, and fountain installations</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Team End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Testimonial</p>
-                    <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
-                    <a class="btn btn-primary py-3 px-4" href="">See More</a>
-                </div>
-                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                        <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="nursery-services" class="container-xxl py-5 bg-light">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <p class="fs-5 fw-bold text-primary">Nursery Services</p>
+          <h1 class="display-5 mb-5">Nursery Development Services</h1>
         </div>
-    </div>
-    <!-- Testimonial End -->
 
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Landscaping</a>
-                    <a class="btn btn-link" href="">Pruning plants</a>
-                    <a class="btn btn-link" href="">Urban Gardening</a>
-                    <a class="btn btn-link" href="">Garden Maintenance</a>
-                    <a class="btn btn-link" href="">Green Technology</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+        <div class="service-category">
+          <h3>Infrastructure Development</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Polyhouse/Greenhouse Construction</h5>
+                <p>Complete setup of protected cultivation structures</p>
+              </div>
             </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Mist Systems Installation</h5>
+                <p>Automated misting systems for propagation areas</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Bench Systems</h5>
+                <p>Efficient workbench setups for potting and maintenance</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Hardening Areas</h5>
+                <p>Designated areas for plant acclimatization</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="service-category">
+          <h3>Automation Systems</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>IoT Control Systems</h5>
+                <p>Smart monitoring of humidity, temperature, and light</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Automated Fertigation</h5>
+                <p>Precision nutrient and water delivery systems</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Climate Control</h5>
+                <p>Automated ventilation, heating, and cooling systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category">
+          <h3>Consultancy Services</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Nursery Layout Design</h5>
+                <p>Optimal space planning for maximum efficiency</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Seedling Production</h5>
+                <p>
+                  Fruit, vegetable, and ornamental seedling production setup
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Government Subsidy Support</h5>
+                <p>NHB and other government scheme documentation assistance</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Branding & Marketing</h5>
+                <p>Nursery branding and product marketing strategies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category">
+          <h3>Management Services</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Disease Control Training</h5>
+                <p>Comprehensive training on pest and disease management</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Grading & Quality Control</h5>
+                <p>Standardized grading systems for plant quality</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Overall Nursery Management</h5>
+                <p>Complete operational management solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Footer End -->
 
+    <div id="agricultural-services" class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 800px"
+        >
+          <p class="fs-5 fw-bold text-primary">Agricultural Support</p>
+          <h1 class="display-5 mb-5">Types of Agricultural Support Services</h1>
+        </div>
 
-    <!-- Copyright Start -->
+        <div class="service-category">
+          <h3>Technical & Advisory Services</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Modern Farming Techniques</h5>
+                <p>Training on advanced cultivation methods and technologies</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Crop Protection</h5>
+                <p>Integrated pest management and disease control strategies</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Pest Control Advisory</h5>
+                <p>Expert guidance on sustainable pest control solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category">
+          <h3>Farm Inputs & Equipment</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Quality Seeds Supply</h5>
+                <p>Certified seeds for various crops</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Fertilizers & Pesticides</h5>
+                <p>Supply of organic and chemical inputs</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Farm Machinery</h5>
+                <p>Equipment rental and sales support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category">
+          <h3>Infrastructure & Market Support</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Farm Restructuring</h5>
+                <p>Land development and infrastructure planning</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Market Information Systems</h5>
+                <p>Real-time market prices and demand information</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Plant Quarantine</h5>
+                <p>Export/import certification and quarantine services</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Logistics Support</h5>
+                <p>Transportation and storage solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-category">
+          <h3>Specialized Services</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Custom Harvesting</h5>
+                <p>Mechanical harvesting services for large farms</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Aerial Application</h5>
+                <p>Drone-based fertilizer and pesticide spraying</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Animal Husbandry Support</h5>
+                <p>Integration of livestock with farming systems</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-list-item">
+                <h5>Forestry & Fishing Support</h5>
+                <p>Multi-sector agricultural support services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="features" class="container-xxl py-5 bg-light">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <p class="fs-5 fw-bold text-primary">Why Choose Us!</p>
+            <h1 class="display-5 mb-4">Your Trusted Agricultural Partner</h1>
+            <p class="mb-4">
+              With 25 years of experience in Srivilliputhur, we offer end-to-end
+              solutions from garden design to complete agricultural support. Our
+              team combines traditional knowledge with modern technology.
+            </p>
+            <div class="mb-4">
+              <p>
+                <i class="fa fa-check text-primary me-2"></i> Comprehensive
+                service portfolio
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i> Government subsidy
+                assistance
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i> Sustainable
+                practices
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-2"></i> One-stop solution
+                provider
+              </p>
+            </div>
+            <a class="btn btn-primary py-3 px-4" href="#quote"
+              >Get Consultation</a
+            >
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div
+                      class="text-center rounded py-5 px-4"
+                      style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)"
+                    >
+                      <div
+                        class="btn-square bg-light rounded-circle mx-auto mb-4"
+                        style="width: 90px; height: 90px"
+                      >
+                        <i class="fa fa-handshake fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-0">End-to-End Solutions</h4>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div
+                      class="text-center rounded py-5 px-4"
+                      style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)"
+                    >
+                      <div
+                        class="btn-square bg-light rounded-circle mx-auto mb-4"
+                        style="width: 90px; height: 90px"
+                      >
+                        <i class="fa fa-cogs fa-3x text-primary"></i>
+                      </div>
+                      <h4 class="mb-0">Modern Technology</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                <div
+                  class="text-center rounded py-5 px-4"
+                  style="box-shadow: 0 0 45px rgba(0, 0, 0, 0.08)"
+                >
+                  <div
+                    class="btn-square bg-light rounded-circle mx-auto mb-4"
+                    style="width: 90px; height: 90px"
+                  >
+                    <i class="fa fa-leaf fa-3x text-primary"></i>
+                  </div>
+                  <h4 class="mb-0">Sustainable Practices</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="quote"
+      class="container-fluid quote my-5 py-5"
+      data-parallax="scroll"
+      data-image-src="img/carousel-2.jpg"
+    >
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div
+              class="bg-white rounded p-4 p-sm-5 wow fadeIn"
+              data-wow-delay="0.5s"
+            >
+              <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
+              <form action="submit_form.php" method="POST">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control bg-light border-0"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control bg-light border-0"
+                        id="phone"
+                        name="phone"
+                        placeholder="Your Mobile"
+                        required
+                      />
+                      <label for="phone">Your Mobile</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select
+                        class="form-control bg-light border-0"
+                        id="service_type"
+                        name="service_type"
+                        required
+                      >
+                        <option value="">Select Service</option>
+                        <option value="garden">Garden Development</option>
+                        <option value="nursery">Nursery Development</option>
+                        <option value="agricultural">
+                          Agricultural Support
+                        </option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="consultation">Consultation</option>
+                      </select>
+                      <label for="service_type">Service Type</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control bg-light border-0"
+                        placeholder="Tell us about your requirements"
+                        id="message"
+                        name="message"
+                        style="height: 100px"
+                        required
+                      ></textarea>
+                      <label for="message"
+                        >Project Details / Requirements</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-primary py-3 px-4" type="submit">
+                      Submit Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <p class="fs-5 fw-bold text-primary">Our Projects</p>
+          <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+        </div>
+        <div class="row wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-12 text-center">
+            <ul class="list-inline rounded mb-5" id="portfolio-flters">
+              <li class="mx-2 active" data-filter="*">All</li>
+              <li class="mx-2" data-filter=".first">Complete Projects</li>
+              <li class="mx-2" data-filter=".second">Ongoing Projects</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row g-4 portfolio-container">
+          <div
+            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="portfolio-inner rounded">
+              <img
+                class="img-fluid"
+                src="img/service-1.jpg"
+                alt="Residential Garden Design - Srivilliputhur Villa"
+              />
+              <div class="portfolio-text">
+                <h4 class="text-white mb-4">Residential Garden</h4>
+                <p class="text-light">
+                  Complete landscape design for a villa in Srivilliputhur
+                </p>
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg-square rounded-circle mx-2"
+                    href="img/service-1.jpg"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a class="btn btn-lg-square rounded-circle mx-2" href="#"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="portfolio-inner rounded">
+              <img
+                class="img-fluid"
+                src="img/service-2.jpg"
+                alt="Commercial Nursery Setup Project"
+              />
+              <div class="portfolio-text">
+                <h4 class="text-white mb-4">Commercial Nursery</h4>
+                <p class="text-light">
+                  2-acre nursery development with polyhouse
+                </p>
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg-square rounded-circle mx-2"
+                    href="img/service-2.jpg"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a class="btn btn-lg-square rounded-circle mx-2" href="#"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="portfolio-inner rounded">
+              <img
+                class="img-fluid"
+                src="img/service-3.jpg"
+                alt="School Garden Project - Tamil Nadu"
+              />
+              <div class="portfolio-text">
+                <h4 class="text-white mb-4">School Garden</h4>
+                <p class="text-light">
+                  Educational garden with medicinal plants section
+                </p>
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg-square rounded-circle mx-2"
+                    href="img/service-3.jpg"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a class="btn btn-lg-square rounded-circle mx-2" href="#"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="portfolio-inner rounded">
+              <img
+                class="img-fluid"
+                src="img/service-4.jpg"
+                alt="Rooftop Urban Garden Project"
+              />
+              <div class="portfolio-text">
+                <h4 class="text-white mb-4">Rooftop Garden</h4>
+                <p class="text-light">
+                  Vertical gardening solution for apartment
+                </p>
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg-square rounded-circle mx-2"
+                    href="img/service-4.jpg"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a class="btn btn-lg-square rounded-circle mx-2" href="#"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="portfolio-inner rounded">
+              <img
+                class="img-fluid"
+                src="img/service-5.jpg"
+                alt="Farm Irrigation System Installation"
+              />
+              <div class="portfolio-text">
+                <h4 class="text-white mb-4">Farm Irrigation</h4>
+                <p class="text-light">Drip irrigation system for 5-acre farm</p>
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg-square rounded-circle mx-2"
+                    href="img/service-5.jpg"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a class="btn btn-lg-square rounded-circle mx-2" href="#"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <div class="portfolio-inner rounded">
+              <img
+                class="img-fluid"
+                src="img/service-6.jpg"
+                alt="Medicinal Plant Garden Project"
+              />
+              <div class="portfolio-text">
+                <h4 class="text-white mb-4">Medicinal Garden</h4>
+                <p class="text-light">
+                  Specialized garden with 50+ medicinal plants
+                </p>
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg-square rounded-circle mx-2"
+                    href="img/service-6.jpg"
+                    data-lightbox="portfolio"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                  <a class="btn btn-lg-square rounded-circle mx-2" href="#"
+                    ><i class="fa fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="team" class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        >
+          <p class="fs-5 fw-bold text-primary">Our Team</p>
+          <h1 class="display-5 mb-5">Our Experienced Srivilliputhur Team</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/team-1.jpg"
+                alt="Dr. Rajesh Kumar, Agricultural Scientist"
+              />
+              <div class="team-text">
+                <h4 class="mb-0">Dr. Rajesh Kumar</h4>
+                <p class="text-primary">Agricultural Scientist</p>
+                <p class="mb-3">
+                  PhD in Horticulture with 15+ years experience
+                </p>
+                <div class="team-social d-flex">
+                  <a class="btn btn-square rounded-circle me-2" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="btn btn-square rounded-circle me-2" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/team-2.jpg"
+                alt="Priya Sharma, Landscape Designer"
+              />
+              <div class="team-text">
+                <h4 class="mb-0">Priya Sharma</h4>
+                <p class="text-primary">Landscape Designer</p>
+                <p class="mb-3">Specialized in sustainable garden designs</p>
+                <div class="team-social d-flex">
+                  <a class="btn btn-square rounded-circle me-2" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="btn btn-square rounded-circle me-2" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item rounded">
+              <img
+                class="img-fluid"
+                src="img/team-3.jpg"
+                alt="Arun Kumar, Nursery Manager"
+              />
+              <div class="team-text">
+                <h4 class="mb-0">Arun Kumar</h4>
+                <p class="text-primary">Nursery Manager</p>
+                <p class="mb-3">
+                  Expert in plant propagation and nursery management
+                </p>
+                <div class="team-social d-flex">
+                  <a class="btn btn-square rounded-circle me-2" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="btn btn-square rounded-circle me-2" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonial" class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+            <p class="fs-5 fw-bold text-primary">Testimonial</p>
+            <h1 class="display-5 mb-5">What Our Clients Say!</h1>
+            <p class="mb-4">
+              See what our happy clients have to say about our work. We're proud
+              to have built lasting relationships and beautiful gardens for our
+              community.
+            </p>
+            <a class="btn btn-primary py-3 px-4" href="#contact"
+              >Share Your Experience</a
+            >
+          </div>
+          <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="owl-carousel testimonial-carousel">
+              <div class="testimonial-item">
+                <img
+                  class="img-fluid rounded mb-3"
+                  src="img/testimonial-1.jpg"
+                  alt="Mr. Senthil Kumar - Client Testimonial"
+                />
+                <p class="fs-5">
+                  "Suakshitha Nursery transformed our 2-acre barren land into a
+                  productive farm. Their expertise in drip irrigation and crop
+                  selection was exceptional. Highly recommended!"
+                </p>
+                <h4>Mr. Senthil Kumar</h4>
+                <span>Farm Owner, Virudhunagar</span>
+              </div>
+              <div class="testimonial-item">
+                <img
+                  class="img-fluid rounded mb-3"
+                  src="img/testimonial-2.jpg"
+                  alt="Mrs. Lakshmi Priya - Client Testimonial"
+                />
+                <p class="fs-5">
+                  "The rooftop garden they created for our apartment is amazing!
+                  They used space efficiently and selected plants that thrive in
+                  our climate. Maintenance service is also excellent."
+                </p>
+                <h4>Mrs. Lakshmi Priya</h4>
+                <span>Resident, Srivilliputhur</span>
+              </div>
+              <div class="testimonial-item">
+                <img
+                  class="img-fluid rounded mb-3"
+                  src="img/testimonial-3.jpg"
+                  alt="Dr. Arvind - Client Testimonial"
+                />
+                <p class="fs-5">
+                  "Their medicinal plant garden project for our school has been
+                  a great learning experience for students. Professional team,
+                  quality plants, and great after-service support."
+                </p>
+                <h4>Dr. Arvind</h4>
+                <span>School Principal, Madurai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="contact"
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Our Office</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Garden Road, Near
+              Andal Temple, Srivilliputhur, Tamil Nadu 626125
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 98765 43210
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>contact@suakshithanursery.com
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-clock me-3"></i>Mon-Sun: 9:00 AM - 6:00 PM
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://facebook.com/suakshithanursery"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://instagram.com/suakshithanursery"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://youtube.com/suakshithanursery"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://wa.me/919876543210"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="#about">About Us</a>
+            <a class="btn btn-link" href="#services">Garden Services</a>
+            <a class="btn btn-link" href="#nursery-services"
+              >Nursery Services</a
+            >
+            <a class="btn btn-link" href="#agricultural-services"
+              >Agricultural Support</a
+            >
+            <a class="btn btn-link" href="#contact">Contact Us</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Popular Services</h4>
+            <a class="btn btn-link" href="#services">Landscape Design</a>
+            <a class="btn btn-link" href="#nursery-services"
+              >Polyhouse Construction</a
+            >
+            <a class="btn btn-link" href="#agricultural-services"
+              >Farm Irrigation</a
+            >
+            <a class="btn btn-link" href="#services">Garden Maintenance</a>
+            <a class="btn btn-link" href="#nursery-services">Nursery Setup</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Newsletter</h4>
+            <p>
+              Subscribe for gardening tips, offers, and updates from our
+              experts.
+            </p>
+            <div class="position-relative">
+              <input
+                class="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom" href="https:/nanoflyinfotech.com">NanoFly InfoTech</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Suakshitha Nursery</a>, All
+            Right Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Designed By
+            <a class="border-bottom" href="https://nanoflyinfotech.com"
+              >Nanofly Infotech</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Copyright End -->
 
+    <a
+      href="#home"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -722,8 +1479,6 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
