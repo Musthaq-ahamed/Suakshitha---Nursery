@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Plant Catalog - Suakshitha Nursery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Explore our wide range of ornamental and medicinal plants at Suakshitha Nursery, Srivilliputhur."
+      name="description"
+    />
+
+    <link href="img/logo/3.png" rel="icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      .plant-card {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-left: 4px solid #198754;
+        background: #f8f9fa;
+        height: 100%;
+      }
+      .plant-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        background: #ffffff;
+      }
+      .section-title {
+        color: #198754;
+        border-bottom: 2px solid #198754;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        display: inline-block;
+      }
+      .whatsapp-btn {
+        background-color: #25d366;
+        color: white;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+      .whatsapp-btn:hover {
+        background-color: #128c7e;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+      <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start">
+          <div class="h-100 d-inline-flex align-items-center me-4">
+            <span class="fa fa-phone-alt me-2"></span>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="h-100 d-inline-flex align-items-center">
+            <span class="far fa-envelope me-2"></span>
+            <span>contact@suakshithanursery.com</span>
+          </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end">
+          <div class="h-100 d-inline-flex align-items-center mx-n2">
+            <span>Follow Us:</span>
+            <a class="btn btn-link text-light" href="#"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-link text-light" href="#"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-link text-light" href="#"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm"
+    >
+      <div class="container-fluid px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img
+            src="img/logo/2.png"
+            alt="Logo"
+            style="height: 70px; width: auto"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-3 py-lg-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="index.html#about" class="nav-item nav-link">About</a>
+            <a href="index.html#services" class="nav-item nav-link active"
+              >Services</a
+            >
+            <a href="index.html#projects" class="nav-item nav-link">Projects</a>
+            <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+          </div>
+          <a
+            href="#quote"
+            class="btn btn-primary py-2 px-4 rounded-0 d-none d-lg-block ms-3"
+            >Get Quote</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid page-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+      style="
+        background: linear-gradient(
+            rgba(15, 66, 41, 0.6),
+            rgba(15, 66, 41, 0.6)
+          ),
+          url(img/carousel-1.jpg) center center no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="container text-center py-5">
+        <h1 class="display-3 text-white mb-4 animated slideInDown">
+          Our Plant Collection
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              Plants
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-start wow fadeInUp" data-wow-delay="0.1s">
+          <h2 class="section-title">Exotic Ornamental Plants</h2>
+        </div>
+        <div class="row g-4 mb-5" id="ornamental-list"></div>
+
+        <div class="text-start wow fadeInUp" data-wow-delay="0.1s">
+          <h2 class="section-title">Best Medicinal Plants For Home Gardens</h2>
+        </div>
+        <div class="row g-4" id="medicinal-list"></div>
+      </div>
+    </div>
+    <div
+      id="quote"
+      class="container-fluid quote my-5 py-5"
+      data-parallax="scroll"
+      data-image-src="img/carousel-2.jpg"
+    >
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div
+              class="bg-white rounded p-4 p-sm-5 wow fadeIn"
+              data-wow-delay="0.5s"
+            >
+              <h1 class="display-5 text-center mb-5">Inquire About Plants</h1>
+              <form action="submit_form.php" method="POST">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control bg-light border-0"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control bg-light border-0"
+                        placeholder="Which plant are you interested in?"
+                        id="message"
+                        style="height: 100px"
+                        required
+                      ></textarea>
+                      <label for="message">Message / Specific Plants</label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-primary py-3 px-4" type="submit">
+                      Send Inquiry
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Our Office</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>123 Garden Road,
+              Srivilliputhur
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 98765 43210
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>contact@suakshithanursery.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="#"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="index.html#about">About Us</a>
+            <a class="btn btn-link" href="index.html#contact">Contact Us</a>
+            <a class="btn btn-link" href="index.html#services">Our Services</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Business Hours</h4>
+            <p class="mb-1">Monday - Sunday</p>
+            <h6 class="text-light">09:00 AM - 06:00 PM</h6>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Newsletter</h4>
+            <div class="position-relative w-100">
+              <input
+                class="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Suakshitha Nursery</a>, All
+            Right Reserved.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            Designed By
+            <a class="border-bottom" href="https://nanoflyinfotech.com"
+              >Nanofly Infotech</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+      const ornamentalPlants = [
+        {
+          name: "Silver Nerve Plant",
+          bio: "Fittonia with striking silver veins on deep green leaves. Thrives in humid conditions.",
+        },
+        {
+          name: "Fibre Optic Grass Plant",
+          bio: "A unique sedge that looks like fiber optic cables with tiny flowers at the tips.",
+        },
+        {
+          name: "Snake Plant",
+          bio: "The ultimate air purifier that is nearly indestructible. Stores oxygen for nighttime release.",
+        },
+        {
+          name: "Peace Lily",
+          bio: "Elegant white blooms with dark green foliage. Excellent at filtering indoor air toxins.",
+        },
+        {
+          name: "Chinese Money Plant",
+          bio: "Pilea peperomioides, famous for its coin-shaped leaves. A symbol of prosperity.",
+        },
+        {
+          name: "Water Bamboo",
+          bio: "Dracaena sanderiana, grows in water. Believed to bring luck and positive energy.",
+        },
+        {
+          name: "Bonsai",
+          bio: "Specially trained miniature trees that bring the beauty of the forest into your home.",
+        },
+        {
+          name: "Bunny Ear Cactus",
+          bio: "Opuntia microdasys with pad-like stems that look like rabbit ears. Low maintenance.",
+        },
+        {
+          name: "Marigold (Seasonal)",
+          bio: "Bright orange and yellow flowers that naturally repel pests in your garden.",
+        },
+        {
+          name: "Cockscomb (Seasonal)",
+          bio: "Vibrant, velvety flowers with a unique shape similar to a rooster's comb.",
+        },
+        {
+          name: "Areca Palm",
+          bio: "A lush, tropical palm that acts as a natural humidifier for indoor spaces.",
+        },
+        {
+          name: "Spider Plant",
+          bio: "Easy-to-grow plant that produces 'babies' on long stems. Highly resilient.",
+        },
+        {
+          name: "Hibiscus",
+          bio: "Classic tropical flowering shrub available in many vibrant colors. Attracts butterflies.",
+        },
+      ];
+
+      const medicinalPlants = [
+        {
+          name: "Tulsi (Holy Basil)",
+          bio: "The 'Queen of Herbs'. Known for its anti-stress, immune-boosting, and healing properties.",
+        },
+        {
+          name: "Ajwain Plant",
+          bio: "Fragrant leaves used to treat digestion, cough, and cold in traditional home remedies.",
+        },
+        {
+          name: "Coriander Plant",
+          bio: "Essential culinary herb that aids digestion and is rich in antioxidants.",
+        },
+        {
+          name: "Aloe Vera Plant",
+          bio: "The 'Miracle Plant' used for skin healing, hair care, and as a natural detoxifier.",
+        },
+        {
+          name: "Lavender",
+          bio: "Renowned for its calming scent that helps with sleep, anxiety, and skin irritation.",
+        },
+        {
+          name: "Mustard",
+          bio: "Nutrient-dense greens and seeds used for their anti-inflammatory and digestive benefits.",
+        },
+        {
+          name: "Mint",
+          bio: "A refreshing herb that aids digestion, freshens breath, and provides a cooling effect.",
+        },
+        {
+          name: "Lemongrass",
+          bio: "Used in teas to relieve anxiety, boost oral health, and as a natural mosquito repellent.",
+        },
+      ];
+
+      function renderPlants(list, containerId) {
+        const container = document.getElementById(containerId);
+        list.forEach((plant) => {
+          const card = `
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="plant-card p-4 rounded d-flex flex-column h-100" onclick="sendWhatsApp('${plant.name}')">
+                        <h4 class="mb-2 text-primary">${plant.name}</h4>
+                        <p class="mb-3 text-muted flex-grow-1">${plant.bio}</p>
+                        <button class="btn btn-sm whatsapp-btn w-100"><i class="fab fa-whatsapp me-2"></i>Inquire on WhatsApp</button>
+                    </div>
+                </div>`;
+          container.innerHTML += card;
+        });
+      }
+
+      function sendWhatsApp(plantName) {
+        const phone = "918610315901";
+        const message = `Hello Suakshitha Nursery! I am interested in the *${plantName}*. Could you please tell me about its availability?`;
+        window.open(
+          `https://wa.me/${phone}?text=${encodeURIComponent(message)}`,
+          "_blank"
+        );
+      }
+
+      new WOW().init();
+      renderPlants(ornamentalPlants, "ornamental-list");
+      renderPlants(medicinalPlants, "medicinal-list");
+    </script>
+  </body>
+</html>
